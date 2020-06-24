@@ -19,6 +19,7 @@ public class BinaryAdd {
      *         第一次：[1,0,1,2]
      *         第二次：[1,0,2,0]
      *         第三次：[1,1,1,0]
+     *
      * */
     public static void main(String[] args) {
         addBinary("100", "110010");
