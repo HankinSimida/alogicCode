@@ -22,13 +22,10 @@ public class MergerSort {
     private static void mergerSort(int[] arr, int left, int right) {
         if (left < right) {
             int mid = (left + right) / 2;
-
 //          分左
             mergerSort(arr, left, mid);
-
 //          分右
             mergerSort(arr, mid + 1, right);
-
 //          合
             merger(arr, left, mid, right);
         }
