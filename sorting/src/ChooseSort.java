@@ -36,7 +36,6 @@ public class ChooseSort {
                 arr[i] = temp;
             }
 
-
         }
         System.out.println(Arrays.toString(arr));
 
