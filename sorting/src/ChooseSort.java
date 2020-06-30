@@ -23,9 +23,9 @@ public class ChooseSort {
     public static void main(String[] args) {
         int[] arr = {9, 8, 0, 7, 1, 3, 2};
         int n = arr.length;
-        for (int i = 0; i < n - 1; i++) {
+        for (int i = 0; i < n-1 ; i++) {
             int minLoc = i;
-            for (int j = i + 1; j < n; j++) {
+            for (int j = i +1 ; j < n; j++) {
                 if (arr[j] < arr[minLoc]) {
                     minLoc = j;
                 }
