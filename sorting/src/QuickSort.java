@@ -31,6 +31,7 @@ public class QuickSort {
 
     public static void qSort(int[] data, int left, int right) {
         int base = data[left];
+
         int ll = left;
         int rr = right;
         while (ll < rr) {
