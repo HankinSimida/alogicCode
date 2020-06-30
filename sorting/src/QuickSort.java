@@ -21,16 +21,12 @@ import java.util.Arrays;
  * 不稳定
  */
 public class QuickSort {
-    static int a = 0;
-    static int b = 0;
 
     public static void main(String[] args) {
         int[] arr = {100, 201, 89, 45, 32, 120, 89, 66, 101};
         qSort(arr, 0, arr.length - 1);
         Arrays.stream(arr).forEach(x -> System.out.print(x + " "));
         System.out.println();
-        System.out.println(a);
-        System.out.println(b);
     }
 
     public static void qSort(int[] data, int left, int right) {
@@ -46,7 +42,6 @@ public class QuickSort {
             }
 //           找到后,交换位置,ll往前+1
             if (ll < rr) {
-                a++;
                 int temp = data[rr];
                 data[rr] = data[ll];
                 data[ll] = temp;
@@ -58,7 +53,6 @@ public class QuickSort {
             }
 //           找到后,交换位置,rr往后-1
             if (ll < rr) {
-                b++;
                 int temp = data[rr];
                 data[rr] = data[ll];
                 data[ll] = temp;
