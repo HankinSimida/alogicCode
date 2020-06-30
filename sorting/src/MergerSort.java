@@ -8,7 +8,9 @@ import java.util.Arrays;
 /**
  * 归并排序：
  * 思想：先分，再合
- * 时间复杂度（nlogn）
+ * 时间复杂度O(nlogn)
+ * 空间复杂度O(n)
+ *
  */
 public class MergerSort {
     public static void main(String[] args) {
