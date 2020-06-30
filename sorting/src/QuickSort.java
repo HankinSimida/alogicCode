@@ -30,11 +30,9 @@ public class QuickSort {
     }
 
     public static void qSort(int[] data, int left, int right) {
-
         int base = data[left];
         int ll = left;
         int rr = right;
-
         while (ll < rr) {
 //          从后往前找,没找到,rr--往前找
             while (ll < rr && data[rr] >= base) {
@@ -60,11 +58,9 @@ public class QuickSort {
             }
 //            开始递归 分成三部 左右分别快排
             if (left < ll) {
-
                 qSort(data, left, ll - 1);
             }
             if (ll < right) {
-
                 qSort(data, ll + 1, right);
             }
         }
