@@ -52,6 +52,7 @@ public class GreedyAlgorithm {
         meetingList.add(new Meeting(8, 13, 15));
         meetingList.add(new Meeting(9, 14, 15));
         meetingList.add(new Meeting(10, 15, 16));
+        meetingList.add(new Meeting(11, 16, 17));
         meetingList.sort(null);
         int curTime = 8;
         for (int i = 0; i < meetingList.size(); i++) {
