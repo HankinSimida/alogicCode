@@ -1,4 +1,4 @@
-package cn.hankin.net.pro.nio;
+package cn.hankin.net.pro.nio.buffer;
 
 import java.nio.IntBuffer;
 
