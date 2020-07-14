@@ -16,6 +16,7 @@ public class MappedBufferDemo {
     public static void main(String[] args) throws IOException {
         RandomAccessFile randomAccessFile =new RandomAccessFile("out.txt","rw");
         FileChannel channel = randomAccessFile.getChannel();
+
 //        0,10 10->大小
         MappedByteBuffer map = channel.map(FileChannel.MapMode.READ_WRITE, 0, 10);
         map.put(0,(byte)'8');

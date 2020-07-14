@@ -19,6 +19,7 @@ public class BasicBuffer {
         while (intBuffer.hasRemaining()){
             System.out.println(intBuffer.get());
         }
+
 //        不会清除数据，仅仅是把各个标记恢复到初始状态
         intBuffer.clear();
         intBuffer.position(2);
