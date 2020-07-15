@@ -16,7 +16,6 @@ public class DynamicPlan {
 //        Max(money[i]+dp[i-1][w-weight[i]],res[i-1][w])
 //        money[i]+dp[i-1][w-weight[i]]:装这个物品  money[i]->当前物品的价值  dp[i-1][w-weight[i]]->上一次最大价值
 
-
         // 每次加的物品
         for (int i = 1; i <= n; i++) {
 
@@ -25,7 +24,6 @@ public class DynamicPlan {
 
                 // 表示这个物品可以装进去
                 if (weight[i - 1] <= cw) {
-
                     dp[i][cw] = Math.max(value[i - 1] + dp[i - 1][cw - weight[i - 1]],
                             dp[i - 1][cw]);
                 } else {
