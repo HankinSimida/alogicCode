@@ -1,4 +1,4 @@
-/**
+package dynamic; /**
  * @author hankin
  * @date 2020/7/13 12:53
  */
@@ -31,7 +31,7 @@ class Meeting implements Comparable<Meeting> {
 
     @Override
     public String toString() {
-        return "Meeting{" +
+        return "dynamic.Meeting{" +
                 "meNum=" + meNum +
                 ", startTime=" + startTime +
                 ", endTime=" + endTime +
