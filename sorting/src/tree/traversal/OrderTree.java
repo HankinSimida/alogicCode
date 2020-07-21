@@ -1,5 +1,7 @@
 package tree.traversal;
 
+import java.util.ArrayDeque;
+
 /**
  *
  * 时间复杂度 O(2*n) -> O(n)
@@ -22,9 +24,10 @@ public class OrderTree {
     public static void main(String[] args) {
         TreeNodeDefinition a = getData();
 
-        preOrder(a);
-        inOrder(a);
-        postOrder(a);
+//        preOrder(a);
+//        inOrder(a);
+//        postOrder(a);
+        BFSOrder(a);
     }
 
 
@@ -74,9 +77,34 @@ public class OrderTree {
     }
 
 
+    /**
+     * BFS广度优先搜索（层次遍历）
+     * @param node
+     */
+    private static void BFSOrder(TreeNodeDefinition node){
+        if (node==null){
+            return;
+        }
+        ArrayDeque<TreeNodeDefinition> queue = new ArrayDeque();
+        queue.add(node);
+        while (!queue.isEmpty()) {
+
+            // 一定要放判定之前，否则会出大事
+            node = queue.poll();
+            print(node);
+            if (node.getLeft() != null) {
+                queue.add(node.getLeft());
+            }
+            if (node.getRight() != null) {
+                queue.add(node.getRight());
+            }
+
+        }
+    }
+
 
     private static void print(TreeNodeDefinition node) {
-        System.out.print(node.getData()+" ");
+        System.out.println(node.getData());
     }
 
     private static TreeNodeDefinition getData() {
