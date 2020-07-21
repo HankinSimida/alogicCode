@@ -76,4 +76,22 @@ public class SimpleTreeBase {
      * -----------------------------------
      *
      */
+
+    /**
+     * 二叉树遍历：
+     *          A
+     *        /  \
+     *       B    E
+     *        \   \
+     *        C    F
+     *       /    /
+     *      D    G
+     *          / \
+     *         H   K
+     *
+     * 前序遍历(root left right): A B C D E F G H K
+     * 中序遍历(left root right): B D C A E H G K F
+     * 后序遍历(left right root): D C B H K G F E A
+     *
+     */
 }
