@@ -1,4 +1,4 @@
-package tree;
+package tree.hfm;
 
 /**
  * @author hankin
@@ -15,6 +15,7 @@ public class HafumanTree {
      *      2、移除原来的两个点
      *      3、将组成的子树放到原来的序列中
      *      4、重复 1、2、3直到最后一个点
+     *      5、可逆
      *
      *  e.g
      *  a:3 b:24 c:6 d:20 e:34 f:4 g:12
@@ -72,4 +73,6 @@ public class HafumanTree {
      *
      *
      */
+
+
 }
