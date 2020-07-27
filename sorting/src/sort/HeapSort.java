@@ -84,6 +84,8 @@ public class HeapSort {
      */
     public static void heapSort(int[] data) {
         int len = data.length;
+
+        // 从最后一个非叶子节点开始构建树堆
         for (int i = len / 2 - 1; i >= 0; i--) {
             maxHeap(data, i, len);
         }
