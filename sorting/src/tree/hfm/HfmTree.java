@@ -22,7 +22,7 @@ public class HfmTree {
 
     public void createTree() {
         // 拿出所有的点 a b c d e f g
-        Character[] keys = weights.keySet().toArray(Character[]::new);
+        Character[] keys = weights.keySet().toArray(new Character[0]);
         PriorityQueue<HfmNode> priorityQueue = new PriorityQueue<>();
         for (Character c : keys) {
             HfmNode hfmNode = new HfmNode();
