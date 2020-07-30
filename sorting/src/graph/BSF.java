@@ -19,6 +19,7 @@ import java.util.concurrent.ArrayBlockingQueue;
  * <p>
  * <p>
  * 数据量小优先考虑BSF(广度优先)
+ * 时间复杂度O（n）
  */
 public class BSF {
 
@@ -93,9 +94,4 @@ public class BSF {
 
 
 
-}
-
-class Point {
-    int x;
-    int y;
 }
