@@ -82,7 +82,7 @@ public class HeapSort {
      * 时间复杂度 n*logn
      * @param data
      */
-    public static void heapSort(int[] data) {
+    private static void heapSort(int[] data) {
         int len = data.length;
 
         // 从最后一个非叶子节点开始构建树堆

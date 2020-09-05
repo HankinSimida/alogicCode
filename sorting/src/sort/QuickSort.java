@@ -30,7 +30,7 @@ public class QuickSort {
         System.out.println();
     }
 
-    public static void qSort(int[] data, int left, int right) {
+    private static void qSort(int[] data, int left, int right) {
         int base = data[left];
 
         int ll = left;
