@@ -10,12 +10,14 @@ import java.util.Arrays;
  * 思想：先分，再合
  * 时间复杂度O(nlogn)
  * 空间复杂度O(n)
- *
  */
 public class MergerSort {
+    private static int[] temp;
+
     public static void main(String[] args) {
         int[] arr = {9, 8, 7, 0, 1, 3, 2};
         int length = arr.length;
+        temp = new int[arr.length];
         mergerSort(arr, 0, length - 1);
         Arrays.stream(arr).forEach(x -> System.out.print(x + " "));
 //        System.out.println(Arrays.toString(arr));
@@ -40,7 +42,7 @@ public class MergerSort {
      * loc 表示临时数组下标现在存的位置
      */
     private static void merger(int[] arr, int left, int mid, int right) {
-        int[] temp = new int[arr.length];
+
         int point1 = left;
         int point2 = mid + 1;
         int loc = left;
